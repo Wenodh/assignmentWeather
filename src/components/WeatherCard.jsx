@@ -6,7 +6,7 @@ export default function WeatherCard(props) {
       <thead>
         <tr>
           <th className="tablehead date" colSpan="2">
-            Date: {props.data.dt_txt.split(" ")[0]}
+            Date: {props.data.dt_txt.split(" ")[0].split("-").reverse().join("-")}
           </th>
         </tr>
       </thead>
